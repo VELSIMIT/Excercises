@@ -47,10 +47,10 @@ int main() {
 
     if (numbers >= 2 && symbols >= 2 && password.size() >= 8 && letters >= 2 && space == 0) {
         std::cout << "Strong" << std::endl;
-        return 0; // Завершаем программу
+        return 0; 
     }
     else {
         std::cout << "Weak" << std::endl;
-        return 0; // Завершаем программу
+        return 0; 
     }
 }
