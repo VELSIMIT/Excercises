@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Passwort Validation[hard].cpp">
+    <ClCompile Include="Passwort Validation [hard].cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
     <ClCompile Include="Youtube Link Finder [medium].cpp">
@@ -27,10 +27,19 @@
     <ClCompile Include="Halloween Candy [easy].cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="Fruit Bowl[easy].cpp">
+    <ClCompile Include="Fruit Bowl [easy].cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="Ballpark Orders{easy].cpp">
+    <ClCompile Include="Ballpark Orders [easy].cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheer Creator [easy].cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Skee-Ball [easy].cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Paint Costs [easy].cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
