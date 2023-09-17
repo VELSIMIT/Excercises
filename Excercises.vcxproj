@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ballpark Orders{easy].cpp" />
+    <ClCompile Include="Fruit Bowl[easy].cpp" />
     <ClCompile Include="Halloween Candy [easy].cpp" />
     <ClCompile Include="Passwort Validation[hard].cpp" />
     <ClCompile Include="Popsicles [easy].cpp" />
