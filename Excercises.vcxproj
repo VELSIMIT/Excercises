@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Argentina [easy].cpp" />
     <ClCompile Include="Ballpark Orders [easy].cpp" />
     <ClCompile Include="Cheer Creator [easy].cpp" />
     <ClCompile Include="Fruit Bowl [easy].cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="Passwort Validation [hard].cpp" />
     <ClCompile Include="Popsicles [easy].cpp" />
     <ClCompile Include="Skee-Ball [easy].cpp" />
+    <ClCompile Include="Splitting Strings [medium].cpp" />
     <ClCompile Include="Youtube Link Finder [medium].cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
