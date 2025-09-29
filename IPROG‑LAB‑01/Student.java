@@ -1,5 +1,5 @@
 /**
-*@vitalii.vlasiuk
+*@author Vitalii Vlasiuk
 */
 public class Student {
     private String name;

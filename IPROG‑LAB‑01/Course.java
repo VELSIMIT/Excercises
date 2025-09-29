@@ -1,5 +1,5 @@
 /**
-*@vitalii.vlasiuk
+*@author Vitalii Vlasiuk
 */
 public class Course {
     Student s1;
@@ -36,7 +36,10 @@ public class Course {
     }
 
     String name;
-
+    public Course(String name){
+        this.name = name;
+    }
+    
     public String getName(){
         return this.name;
     } 
