@@ -4,7 +4,6 @@
 public class Program {
     public static void main(String []args){
         Course course;
-         
 
         Student s1 = new Student ("Doe", "John", 12345);
         Student s2 = new Student ("Doe", "Jane", 23456);
@@ -17,7 +16,7 @@ public class Program {
         Student s9 = new Student ("Doe", "Jabbar", 91011);
         Student s10 = new Student ("Wick", "John", 11111);
 
-        course = new Course(); 
+        course = new Course("SWE2025"); 
         course.addStudents(s1,s2,s3,s4,s5,s6,s7,s8,s9,s10);
     }
 }
