@@ -1,7 +1,6 @@
 /**
-@vitalii.vlasiuk
+*@vitalii.vlasiuk
 */
-
 public class Course {
     Student s1;
     Student s2;
