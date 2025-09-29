@@ -1,7 +1,6 @@
 /**
-@vitalii.vlasiuk
+*@vitalii.vlasiuk
 */
-
 public class Student {
     private String name;
     private String firstName;

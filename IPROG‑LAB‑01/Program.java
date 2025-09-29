@@ -1,12 +1,10 @@
 /**
-@vitalii.vlasiuk
+*@vitalii.vlasiuk
 */
-
 public class Program {
     public static void main(String []args){
-        Course course;
-        course = new Course(); 
-        
+        Course course = new Course();  
+
         Student s1 = new Student ("Doe", "John", 12345);
         Student s2 = new Student ("Doe", "Jane", 23456);
         Student s3 = new Student ("Doe", "Jacob", 34567);
