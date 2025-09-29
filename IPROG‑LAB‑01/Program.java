@@ -3,7 +3,8 @@
 */
 public class Program {
     public static void main(String []args){
-        Course course = new Course();  
+        Course course;
+        course = new Course();  
 
         Student s1 = new Student ("Doe", "John", 12345);
         Student s2 = new Student ("Doe", "Jane", 23456);
