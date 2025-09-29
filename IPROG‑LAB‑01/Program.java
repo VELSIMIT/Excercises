@@ -5,6 +5,8 @@
 public class Program {
     public static void main(String []args){
         Course course;
+        course = new Course(); 
+        
         Student s1 = new Student ("Doe", "John", 12345);
         Student s2 = new Student ("Doe", "Jane", 23456);
         Student s3 = new Student ("Doe", "Jacob", 34567);
@@ -16,7 +18,6 @@ public class Program {
         Student s9 = new Student ("Doe", "Jabbar", 91011);
         Student s10 = new Student ("Wick", "John", 11111);
 
-        course = new Course();  
         course.addStudents(s1,s2,s3,s4,s5,s6,s7,s8,s9,s10);
     }
 }

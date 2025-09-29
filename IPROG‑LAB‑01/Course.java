@@ -24,16 +24,16 @@ public class Course {
                             Student student8,
                             Student student9,
                             Student student10){
-    this.s1 = student1;
-    this.s2 = student2;
-    this.s3 = student3;
-    this.s4 = student4;
-    this.s5 = student5;
-    this.s6 = student6;
-    this.s7 = student7;
-    this.s8 = student8;
-    this.s9 = student9;
-    this.s10 = student10;
+        this.s1 = student1;
+        this.s2 = student2;
+        this.s3 = student3;
+        this.s4 = student4;
+        this.s5 = student5;
+        this.s6 = student6;
+        this.s7 = student7;
+        this.s8 = student8;
+        this.s9 = student9;
+        this.s10 = student10;
     }
 
     String name;
