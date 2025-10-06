@@ -2,6 +2,19 @@
 * @author V.Vlasiuk
 */
 public class Course {
+
+    // Student[] student = new Student [10]; 
+    
+    /* 
+    public void addStudents(Student[] student){
+        int i = 0;
+        while ( i < student.length){
+            this.student[i] = student[i];
+            i++;
+        }
+    }
+    */
+
     Student s1;
     Student s2;
     Student s3;
@@ -12,6 +25,13 @@ public class Course {
     Student s8;
     Student s9;
     Student s10;
+
+    String name;
+
+    /* 
+    Student[] student = new Student[10];
+    addStudents(student);
+    */
 
     public void addStudents(Student student1,
                             Student student2, 
@@ -35,7 +55,6 @@ public class Course {
         this.s10 = student10;
     }
 
-    String name;
     public Course(String name){
         this.name = name;
     }
