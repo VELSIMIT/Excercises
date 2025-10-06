@@ -1,6 +1,6 @@
 /**
-* @author V.Vlasiuk
-*/
+ * @author V.Vlasiuk
+ */
 public class Program {
     public static void main(String []args){
         Course course;

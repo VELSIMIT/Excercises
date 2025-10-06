@@ -1,6 +1,6 @@
 /**
-* @author V.Vlasiuk
-*/
+ * @author V.Vlasiuk
+ */
 public class Student {
     private String name;
     private String firstName;
