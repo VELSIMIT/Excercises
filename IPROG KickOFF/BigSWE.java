@@ -1,3 +1,6 @@
+/**
+* @author V.Vlasiuk
+*/
 public class BigSWE {
     public static void main(String[] args) {
         String[] bigS = {

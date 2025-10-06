@@ -1,5 +1,5 @@
 /**
-*@author Vitalii Vlasiuk
+* @author V.Vlasiuk
 */
 public class Course {
     Student s1;

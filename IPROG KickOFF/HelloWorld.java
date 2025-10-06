@@ -1,5 +1,5 @@
-/** 
-@vitalii.vlasiuk
+/**
+* @author V.Vlasiuk
 */
 
 public class HelloWorld {

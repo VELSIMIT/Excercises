@@ -1,5 +1,5 @@
 /**
-*@author Vitalii Vlasiuk
+* @author V.Vlasiuk
 */
 public class Student {
     private String name;
@@ -9,8 +9,14 @@ public class Student {
     private String address;
     private String phoneNumber;
     private String email;
+    //static int semester = 1;
 
 //....................................................................................
+
+    /*public setSemester(int newSemester) {
+        semester = newSemester;
+    }
+    */
 
     public void setAge(int age) {
         this.age = age;
