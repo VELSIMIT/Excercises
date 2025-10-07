@@ -1,6 +1,6 @@
 /**
-* @author V.Vlasiuk
-*/
+ * @author V.Vlasiuk
+ */
 public class Course {
 
     // Student[] student = new Student [10]; 
