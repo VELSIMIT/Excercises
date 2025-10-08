@@ -3,15 +3,15 @@
  */
 
 public class Loopex {
-  public static void main(String [] args){
+  public static void main(String [] args) {
     int linescounter = 0;
     int colums = 6;
     int a = 0;
 
-    while(linescounter <= 5){
+    while(linescounter <= 5) {
       
-      if(linescounter == 0){
-        while (a < colums){
+      if(linescounter == 0) {
+        while (a < colums) {
           System.out.print("*");
           a++;
         }
@@ -20,19 +20,19 @@ public class Loopex {
         System.out.println();
       }
       
-      else if(linescounter > 0){
+      else if(linescounter > 0) {
 
         while(a < linescounter) {
-          System.out.print(".");
+          System.out.print(". ");
           a++;
         }
 
         while (a < colums) {
-          System.out.print("*");
+          System.out.print("* ");
           a++;
         }
 
-        if (a <= 6) {
+        if (a <= 6){
           System.out.println();
         }
         

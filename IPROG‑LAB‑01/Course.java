@@ -42,7 +42,7 @@ public class Course {
                             Student student7,
                             Student student8,
                             Student student9,
-                            Student student10){
+                            Student student10) {
         this.s1 = student1;
         this.s2 = student2;
         this.s3 = student3;
@@ -55,11 +55,11 @@ public class Course {
         this.s10 = student10;
     }
 
-    public Course(String name){
+    public Course(String name) {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     } 
 }
