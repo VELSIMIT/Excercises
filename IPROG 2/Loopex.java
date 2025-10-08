@@ -12,7 +12,7 @@ public class Loopex {
       
       if(linescounter == 0) {
         while (a < colums) {
-          System.out.print("*");
+          System.out.print("* ");
           a++;
         }
         linescounter++;
@@ -32,10 +32,7 @@ public class Loopex {
           a++;
         }
 
-        if (a <= 6){
-          System.out.println();
-        }
-        
+        System.out.println();
         a = 0;
         linescounter++;
       }
