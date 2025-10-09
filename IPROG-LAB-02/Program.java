@@ -4,6 +4,7 @@
 public class Program {
     public static void main(String []args) {
         Course course = new Course("SWE2025");
+
         Student s1 = new Student ("Doe", "John", 123456);
         Student s2 = new Student ("Doe", "John", 234567);
 

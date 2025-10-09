@@ -4,7 +4,7 @@
 public class Student {
     private String name;
     private String firstName;
-    private int studentId;
+    private String studentId;
     private int age;
     private String address;
     private String phoneNumber;
@@ -15,6 +15,10 @@ public class Student {
         this.name = name;
         this.firstName = firstName;
         this.studentId = studentId;
+    }
+
+    private void calculateChecksum(int studentId) {
+            //working on it
     }
 
     public boolean hasSameName(Student student) {
@@ -58,7 +62,7 @@ public class Student {
     return this.firstName;
     }
 
-    public int getStudentId() {
+    public String getStudentId() {
     return this.studentId;
     }
 
