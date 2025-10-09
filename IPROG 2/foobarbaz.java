@@ -1,9 +1,13 @@
 /**
  * @author V.Vlasiuk
  */
-public class foobarbaz {
-  public static void main(String [] args) {
-    
-    System.out.println();
+public class Foobarbaz {
+  public static void main(String[] args) {
+    int i = 0;
+
+    while( i < args.length) {
+      System.out.print(args[i] + " ");
+      i++;
+    }
   }
 }
