@@ -14,14 +14,38 @@ public class Student {
     public Student (String name, String firstName, int studentId) {
         this.name = name;
         this.firstName = firstName;
-        this.studentId = studentId;
+        this.studentId = calculateChecksum(studentId);
     }
 
-    private void calculateChecksum(int studentId) {
-            //working on it
-    }
+    private static String calculateChecksum(int inputInteger) {
+        String inputStr = Integer.toString(inputInteger);
+        int[] inputArray = new int [inputStr.length()];
+        
+        int i = 0;
+        while (i < inputArray.length) {
+            inputArray [i] = Character.getNumericValue(inputStr.charAt(i));
+            i++;
+        } 
 
-    public boolean hasSameName(Student student) {
+        int sum = 0;
+        int m = 0;    
+        while (m < inputArray.length) {
+            sum = sum + inputArray[m];
+            m++;
+        }
+    
+        String sum1 = Integer.toString(sum);
+
+        if (sum < 10) {
+           return inputStr + "0" + sum1;
+        }
+                
+        else {
+            return inputStr + sum1;
+        }   
+    }
+    
+    private boolean hasSameName(Student student) {
         boolean answer;
         if (this.name.equals(student.name) && this.firstName.equals(student.firstName)) {
             answer = true;
