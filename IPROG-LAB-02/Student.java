@@ -17,7 +17,7 @@ public class Student {
         this.studentId = calculateChecksum(studentId);
     }
 
-    private static String calculateChecksum(int inputInteger) {
+    private String calculateChecksum(int inputInteger) {
         String inputStr = Integer.toString(inputInteger);
         int[] inputArray = new int [inputStr.length()];
         
