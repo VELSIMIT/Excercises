@@ -8,6 +8,7 @@ public class Program {
         Student s1 = new Student ("Doe", "John", 123456);
         Student s2 = new Student ("Doe", "John", 234567);
 
+        /* TODO replace with arrays and while loop
         Student[] student = new Student[10];
         student[0] = new Student ("Doe", "John", 123456);
         student[1] = new Student ("Doe", "Jane", 112211);
@@ -19,7 +20,7 @@ public class Program {
         student[7] = new Student ("Doe", "Joel", 891013);
         student[8] = new Student ("Doe", "Jabbar", 910114);
         student[9] = new Student ("Wick", "John", 111115);
-
+        */
         
         course.addStudents(student);
 
