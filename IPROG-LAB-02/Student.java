@@ -17,34 +17,25 @@ public class Student {
         this.studentId = calculateChecksum(studentId);
     }
 
-    private String calculateChecksum(int inputInteger) {
-        String inputStr = Integer.toString(inputInteger);
-        int[] inputArray = new int [inputStr.length()];
+    private static String calculateChecksum(int inputID) {
+        String outputId = Integer.toString(inputID);
+        int startPos = inputID;
+        int checksum = 0;
+
+        while (startPos > 0) {
+            checksum += startPos % 10;
+            startPos /= 10;
+        }
         
-        int i = 0;
-        while (i < inputArray.length) {
-            inputArray [i] = Character.getNumericValue(inputStr.charAt(i));
-            i++;
+        if (checksum >= 10) {
+            return outputId + checksum;
         } 
 
-        int sum = 0;
-        int m = 0;    
-        while (m < inputArray.length) {
-            sum = sum + inputArray[m];
-            m++;
-        }
-    
-        String sum1 = Integer.toString(sum);
-
-        if (sum < 10) {
-           return inputStr + "0" + sum1;
-        }
-                
         else {
-            return inputStr + sum1;
-        }   
+            return outputId + "0" + checksum;
+        }
     }
-    
+
     private boolean hasSameName(Student student) {
         boolean answer;
         if (this.name.equals(student.name) && this.firstName.equals(student.firstName)) {
@@ -79,31 +70,31 @@ public class Student {
 
 
     public String getName() {
-    return this.name;
+        return this.name;
     }
 
     public String getFirstName() {
-    return this.firstName;
+        return this.firstName;
     }
 
     public String getStudentId() {
-    return this.studentId;
+        return this.studentId;
     }
 
     public int getAge() {
-    return this.age;
+        return this.age;
     }
 
     public String getAddress() {
-    return this.address;
+        return this.address;
     }
 
     public String getPhoneNumber() {
-    return this.phoneNumber;
+        return this.phoneNumber;
     }
 
     public String getEmail() {
-    return this.email;
+        return this.email;
     }
 }
 

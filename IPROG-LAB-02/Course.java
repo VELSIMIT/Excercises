@@ -18,6 +18,14 @@ public class Course {
         }
     }
 
+    public void printStudents() {
+        int i = 0;
+        while (i < student.length) {
+            System.out.println(student[i].getFirstName() + " " + student[i].getName() + ", " + student[i].getStudentId()+ ";");
+            i++;
+        }
+    }
+
     public String getName() {
         return this.name;
     } 
