@@ -17,6 +17,7 @@ public class Student {
         this.studentId = calculateChecksum(studentId);
     }
 
+
     private static String calculateChecksum(int inputID) {
         String outputId = Integer.toString(inputID);
         int startPos = inputID;
@@ -35,6 +36,7 @@ public class Student {
             return outputId + "0" + checksum;
         }
     }
+
 
     private boolean hasSameName(Student student) {
         boolean answer;

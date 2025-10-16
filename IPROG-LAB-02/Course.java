@@ -10,6 +10,7 @@ public class Course {
         this.name = name;
     }
 
+
     public void addStudents(Student[] student) {
         int i = 0;
         while (i < student.length) {

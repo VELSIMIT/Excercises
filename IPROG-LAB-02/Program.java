@@ -11,7 +11,7 @@ public class Program {
 
         // Fixed Live Coding part with arrays and loop, instructions are not very clear. 
         // Example: "students[0] = new Student(Wick”, John”, 11111);"
-        // The ID "11111" was originally 5 digits but was changed to 6 digits to exercise the checksum
+        // The ID "11111" is originally 5 digits but was changed to 6 digits to exercise the checksum
         // functionality and produce the expected terminal output.
         String[] studentFirstNames = {"John", "Jane", "Jacob", "Jade", "James", "Julian", "Jack", "Joel", "Jabbar", "John"}; 
         String[] studentNames = {"Doe", "Doe", "Doe", "Doe", "Doe", "Doe", "Doe", "Doe", "Doe", "Wick"};
