@@ -13,7 +13,14 @@ public class LoopTest {
       return;
     }
 
-    int parameterInt = Integer.parseInt(args[1]);
+    int parameterInt;
+   
+    try {
+      parameterInt = Integer.parseInt(args[1]);
+    } catch (NumberFormatException e) {
+        System.out.println("Invalid arguments");
+        return;
+    }
 
     if (args[0].equals("-d")) {
       int y = parameterInt;
