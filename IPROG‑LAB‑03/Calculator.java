@@ -1,6 +1,6 @@
 /**
- * @author V.Vlasiuk
- */
+@author V.Vlasiuk
+**/
 public class Calculator {
   public static int sum(int[] numbers) {
       int i = 0;
