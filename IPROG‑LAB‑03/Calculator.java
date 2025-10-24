@@ -2,14 +2,123 @@
 @author V.Vlasiuk
 **/
 public class Calculator {
+
+  public static void main(String[] args) {
+    if (args.length == 0) {
+      // No instructions about giving output of certain errors
+      System.exit(-1);
+    }
+
+    int[] localArray = new int [args.length - 1]; // changed args length to optimize array size
+
+    if (!args[0].equals("sum") && !args[0].equals("fact") && !args[0].equals("fib") && !args[0].equals("XOR")) {
+      // No instructions about giving output of certain errors
+      System.exit(-2);
+    }
+
+    // String detector 
+    for (int k = 1; k < args.length; k++) {
+      try {
+        localArray[k - 1] = Integer.parseInt(args[k]);
+      } catch (NumberFormatException e) {
+        // System.out.println("Invalid number format");
+        System.exit(-4);
+      }
+    }
+
+//------------------Operations------------------//
+
+    if (args[0].equals("sum")) {
+      for(int i = 1; i < args.length; i++) {
+        /*
+        try {
+          int testnum = Integer.parseInt(args[i]);
+        } catch (NumberFormatException e) {
+          //System.out.println("String detected");
+          System.exit(-3);
+        }
+        */
+        localArray[i - 1] = Integer.parseInt(args[i]);
+      }
+      if (localArray.length <= 1) {
+        //System.out.println("not enough operands");
+        System.exit(-3);
+      }
+
+        System.out.println(Calculator.sum(localArray));
+    }
+
+    if (args[0].equals("fact")){
+      for(int i = 1; i < args.length; i++) {
+        /*
+        try {
+          int testnum = Integer.parseInt(args[i]);
+        } catch (NumberFormatException e) {
+          //System.out.println("String detected");
+          System.exit(-3);
+        }
+        */
+        localArray[i - 1] = Integer.parseInt(args[i]);
+      }
+      if (localArray.length != 1) {
+        //System.out.println("no operands or to much operands"); 
+        System.exit(-3);
+      }
+
+      System.out.println(Calculator.fact(localArray));
+    }
+    
+    if (args[0].equals("fib")){
+      for(int i = 1; i < args.length; i++) {
+        /*
+        try {
+          int testnum = Integer.parseInt(args[i]);
+        } catch (NumberFormatException e) {
+          //System.out.println("String detected");
+          System.exit(-3);
+        }
+        */
+        localArray[i - 1] = Integer.parseInt(args[i]);
+      }
+      if (localArray.length != 1) {
+        //System.out.println("no operands or to much operands"); 
+        System.exit(-3);
+      }
+      
+      System.out.println(Calculator.fib(localArray[0]));
+    }
+
+    if (args[0].equals("XOR")){
+      for(int i = 1; i < args.length; i++) {
+        /*
+        try {
+          int testnum = Integer.parseInt(args[i]);
+        } catch (NumberFormatException e) {
+          //System.out.println("String detected");
+          System.exit(-3);
+        }
+        */
+        localArray[i - 1] = Integer.parseInt(args[i]);
+      }
+        if (localArray.length < 1){
+        //System.out.println("not enough operands");  
+        System.exit(-3);
+      }
+
+      System.out.println(Calculator.xor(localArray));
+    }
+  }
+
+//------------------Methods------------------//
+
   public static int sum(int[] numbers) {
-      int i = 0;
-      int sumOfNumbers = 0;
-      do { 
-        sumOfNumbers = sumOfNumbers + numbers[i];
-        i++;
-      } while (i < numbers.length);
-      return sumOfNumbers;
+    int i = 0;
+    int sumOfNumbers = 0;
+    do { 
+      sumOfNumbers = sumOfNumbers + numbers[i];
+      i++;
+    } while (i < numbers.length);
+    return sumOfNumbers;
   }
 
   public static int fact(int[] number) {
@@ -65,93 +174,5 @@ public class Calculator {
       result = result ^ toBoolean(numbers[i]);
     }
     return result;
-  }
-
-
-  public static void main(String[] args) {
-    if (args.length == 0) {
-      // No instructions about giving output of certain errors
-      System.exit(-1);
-    }
-
-    int[] localArray = new int [args.length - 1]; // changed args length to optimize array size
-
-    if (!args[0].equals("sum") && !args[0].equals("fact") && !args[0].equals("fib") && !args[0].equals("XOR")) {
-      // No instructions about giving output of certain errors
-      System.exit(-2);
-    }
-  
-
-    if (args[0].equals("sum")) {
-      for(int i = 1; i < args.length; i++) {
-        try {
-          int testnum = Integer.parseInt(args[i]);
-        } catch (NumberFormatException e) {
-          //System.out.println("String detected");
-          System.exit(-3);
-        }
-
-        localArray[i - 1] = Integer.parseInt(args[i]);
-      }
-      if (localArray.length <= 1) {
-        //System.out.println("not enough operands");
-        System.exit(-3);
-      }
-        System.out.println(Calculator.sum(localArray));
-    }
-
-    if (args[0].equals("fact")){
-      for(int i = 1; i < args.length; i++) {
-        try {
-          int testnum = Integer.parseInt(args[i]);
-        } catch (NumberFormatException e) {
-          //System.out.println("String detected");
-          System.exit(-3);
-        }
-        localArray[i - 1] = Integer.parseInt(args[i]);
-      }
-      if (localArray.length != 1) {
-        //System.out.println("no operands or to much operands"); 
-        System.exit(-3);
-      }
-
-      System.out.println(Calculator.fact(localArray));
-    }
-    
-    if (args[0].equals("fib")){
-      for(int i = 1; i < args.length; i++) {
-        try {
-          int testnum = Integer.parseInt(args[i]);
-        } catch (NumberFormatException e) {
-          //System.out.println("String detected");
-          System.exit(-3);
-        }
-        localArray[i - 1] = Integer.parseInt(args[i]);
-      }
-      if (localArray.length != 1) {
-        //System.out.println("no operands or to much operands"); 
-        System.exit(-3);
-      }
-      
-      System.out.println(Calculator.fib(localArray[0]));
-    }
-
-    if (args[0].equals("XOR")){
-      for(int i = 1; i < args.length; i++) {
-        try {
-          int testnum = Integer.parseInt(args[i]);
-        } catch (NumberFormatException e) {
-          //System.out.println("String detected");
-          System.exit(-3);
-        }
-        localArray[i - 1] = Integer.parseInt(args[i]);
-      }
-        if (localArray.length < 1){
-        //System.out.println("not enough operands");  
-        System.exit(-3);
-      }
-
-      System.out.println(Calculator.xor(localArray));
-    }
   }
 }  
