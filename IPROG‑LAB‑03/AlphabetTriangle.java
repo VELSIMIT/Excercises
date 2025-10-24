@@ -23,7 +23,11 @@ public class AlphabetTriangle {
 
     for(int i = 0; i < count; i++){
       char letter = (char) (65 + i);
-      line += letter + " ";
+      line += letter;
+
+      if (i < count - 1) {
+        line += " ";
+      }
     }
     return line;
   } 

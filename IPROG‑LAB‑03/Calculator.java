@@ -6,14 +6,14 @@ public class Calculator {
   public static void main(String[] args) {
     if (args.length == 0) {
       // No instructions about giving output of certain errors
-      System.exit(-1);
+      System.exit(-1); // no arguments
     }
 
     int[] localArray = new int [args.length - 1]; // changed args length to optimize array size
 
     if (!args[0].equals("sum") && !args[0].equals("fact") && !args[0].equals("fib") && !args[0].equals("XOR")) {
       // No instructions about giving output of certain errors
-      System.exit(-2);
+      System.exit(-2); // wrong function
     }
 
     // String detector 
@@ -22,7 +22,7 @@ public class Calculator {
         localArray[k - 1] = Integer.parseInt(args[k]);
       } catch (NumberFormatException e) {
         // System.out.println("Invalid number format");
-        System.exit(-4);
+        System.exit(-4); // wrong operand type, (code ‑3 when a wrong NUMBER of operands is given)
       }
     }
 
@@ -145,7 +145,6 @@ public class Calculator {
         fibArray[counter] = fibonacci;
       // DEBUGGING: System.out.print(fibArray[counter] + ", "); //Check output
       }
- 
       else {
       fibonacci = firstNum + secondNum;
       firstNum = secondNum;
@@ -155,6 +154,7 @@ public class Calculator {
       }
     }
     
+    // Return nearest Fibonacci number to input
     if((number - fibArray[Arraycounter - 1]) < fibArray[Arraycounter] - number){
       return fibArray[Arraycounter-1];
     }
